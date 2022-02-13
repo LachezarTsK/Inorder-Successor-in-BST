@@ -28,7 +28,7 @@ public class Solution {
     }
 
     public TreeNode leftmostNodeFromCurrentRoot(TreeNode node) {
-        while (node != null && node.left != null) {
+        while (node.left != null) {
             node = node.left;
         }
         return node;
