@@ -37,7 +37,7 @@ public:
     }
 
     TreeNode* leftmostNodeFromCurrentRoot(TreeNode* node) {
-        while (node != nullptr && node->left != nullptr) {
+        while (node->left != nullptr) {
             node = node->left;
         }
         return node;
